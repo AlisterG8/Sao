@@ -157,14 +157,16 @@ body{
 
 #portada{
     width: 100%;
+    background-image:url(../img/FMV_6660.jpg) ;
+    background-position: center;
     background-size: cover;
-    height: 28rem;
+    height: 30rem;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
     text-align: center;
     align-items: center;  
-    animation: aniport 30s infinite ease-in-out ;
+    /*animation: aniport 30s infinite ease-in-out ;*/
 }
 @media(max-width: 800px) {
     #portada{
@@ -201,14 +203,16 @@ body{
 }
 
 #portada1{
+    width: 100%;
+    background-image:url(../img/FMV_6789.jpg) ;
+    background-position: center;
     background-size: cover;
-    height: 28rem;
+    height: 34rem;
     display: flex;
     flex-direction: column;
     justify-content:space-around;
     text-align: center;
     align-items: center;  
-    animation: aniport 30s infinite ease-in-out ;
 }
 #portada1 div h1{
     font-size: 3rem;
@@ -228,6 +232,70 @@ body{
     font-weight: normal;
     font-style: italic;  
 }
+
+#portada2{
+    width: 100%;
+    background-image:url(../img/ninarosa.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;  
+}
+#portada2 div h1{
+    font-size: 3rem;
+    margin-top: 11rem;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    font-family: lobster;
+    font-weight: normal;
+    font-style:normal;
+    
+}
+#portada2 div h2{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;  
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-family: roboto;
+    font-weight: normal;
+    font-style: italic;  
+}
+
+
+#portada3{
+    width: 100%;
+    background-image:url(../img/quinceanos_sesion.jpg) ;
+    background-position: center;
+    background-size: cover;
+    height: 34rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;  
+}
+#portada3 div h1{
+    font-size: 3rem;
+    margin-top: 11rem;
+    text-shadow: 0px 0px 7px rgb(0, 0, 0);
+    font-family: lobster;
+    font-weight: normal;
+    font-style:normal;
+    
+}
+#portada3 div h2{
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin-top: 1rem;  
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    font-family: roboto;
+    font-weight: normal;
+    font-style: italic;  
+}
+
 .boton{
     width: 40%;
     height: 8%;
@@ -343,6 +411,7 @@ body{
     .nosotros{
         flex-direction:column-reverse;
     }
+    
 }
 
 
@@ -390,7 +459,7 @@ body{
 }
 @media (max-width: 800px){
     .nosotros article p{
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         text-align: center;
         margin-left: 2rem;
         margin-right: 2rem;
@@ -427,16 +496,7 @@ body{
 .negro{
     color: rgb(255, 255, 255);
 }
-.ventajascontainer{
-    background-color: rgb(208, 208, 208);
-}
-.ventajas{
-    display: flex;
-    justify-content:space-between;
-    text-align: center;
-    margin-left: 2rem;
-    margin-right: 2rem;
- }
+
 
  .articulo {
     display: flex;
@@ -447,22 +507,19 @@ body{
     background-color: #f5f5f5;
     border-radius: 10px;
     
-   }
-@media (max-width: 800px){
-    .articulo{
-        flex-direction: column;
-    }
-    
-}
-   
+   }   
    .articuloimg {
     flex: 1;
     width: 50%;
     margin-right: 20px; 
    }
+
    @media (max-width: 800px){
+    .articulo{
+        flex-direction: column;
+    }   
     .articuloimg{
-        width: 75%;
+        width: 94%;
     }
    }
    .articuloimg img{
@@ -479,15 +536,7 @@ body{
     flex-direction: column;
 
    }
-   @media (max-width: 800px){
-       .articulotext {
-        max-width: 80%;
-        margin-top: 2.6rem;
-        margin-bottom: 2.4rem;
-        align-items: center;
-       }
-   }
-   
+
    .articulotitle {
     font-size: 24px;
     margin-bottom: 10px;
@@ -498,6 +547,15 @@ body{
     line-height: 1.5;
     margin-bottom: 20px;
    }
+   @media (max-width: 800px){
+    .articulotext {
+     max-width: 80%;
+     margin-top: 2.6rem;
+     margin-bottom: 2.4rem;
+     align-items: center;
+    }
+    
+}
 
    .botonpublicidad {
         width: 44%;
@@ -508,7 +566,7 @@ body{
         text-decoration: none;
         text-align: center;
         border-radius: 5px;
-        font-size: 16px;
+        font-size: 1.2rem;
         transition: all 0.3s ease;
    }
   
@@ -518,13 +576,13 @@ body{
    }
    @media (max-width: 800px){
     .articulotitle {
-        font-size: 2.2rem;
+        font-size: 1.6rem;
        }
     .articulodescription {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
        } 
     .botonpublicidad{
-           width: 56%;
+           width: 80%;
        }  
    } 
 
@@ -536,6 +594,7 @@ body{
     justify-content: center;
     
  }
+ 
 
  .O{
     color: rgb(0, 0, 0);
@@ -797,3 +856,5 @@ footer {
         background-size: cover;
     }
 }
+
+

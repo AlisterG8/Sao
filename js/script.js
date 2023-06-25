@@ -1,13 +1,10 @@
-
 function metodo() {
-    const cd = document.getElementById('lista');
-    const ads = document.getElementById('J');
+    const cd = document.getElementById('J');
+    const ads = document.getElementById('lista');
 
-    cd.addEventListener('click',() =>{
-        alert(123654789)
+    cd.addEventListener('pointerdown',() =>{
+        ads.classList.toggle('menushow'); 
+           
     });
 }
-
-
-
 window.addEventListener("load",metodo)
